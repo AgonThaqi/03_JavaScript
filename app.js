@@ -1,5 +1,5 @@
-const ORS_API_KEY = '251facb0abaec1216dd7c249b4ae68fc';
-const OWM_API_KEY = '5b3ce3597851110001cf6248a311c8afdd41493f8ed70cb1cc798cc5';
+const ORS_API_KEY = 251facb0abaec1216dd7c249b4ae68fc;
+const OWM_API_KEY = 5b3ce3597851110001cf6248a311c8afdd41493f8ed70cb1cc798cc5;
 
 async function getCoordinates(address) {
     const response = await fetch(`https://api.openrouteservice.org/geocode/search?api_key=${ORS_API_KEY}&text=${address}`);
