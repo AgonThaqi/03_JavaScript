@@ -36,3 +36,4 @@ async function fetchWeather() {
 }
 
 window.fetchWeather = fetchWeather;
+export
