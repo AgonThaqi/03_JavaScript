@@ -5,7 +5,7 @@ button.addEventListener("click", (e) => {
     const address = document.getElementById('address').value;
     const resultDiv = document.getElementById('result');
     resultDiv.innerText = 'Fetching weather...';
-    fetchWeather(address).then(weather=>{
+    fetchWeather(address).then((weather)=>{
         resultDiv.innerText = `The current temperature in ${address} is ${weather.temp}°C with ${weather.description}.`;
     })
 })
